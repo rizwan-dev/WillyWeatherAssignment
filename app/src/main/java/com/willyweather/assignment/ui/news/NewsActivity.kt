@@ -7,6 +7,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.willyweather.assignment.databinding.ActivityNewsBinding
 import com.willyweather.assignment.ui.BaseActivity
+import com.willyweather.assignment.ui.news.details.NewsDetailsActivity
 import com.willyweather.assignment.utils.extensions.toast
 import com.willyweather.assignment.utils.extensions.viewBinding
 
@@ -31,7 +32,7 @@ class NewsActivity : BaseActivity() {
 
         adapter = NewsAdapter()
         adapter.onNewsClicked = {
-            toast(it.toString())
+           startActivity(NewsDetailsActivity.newInstance(this, it))
         }
 
         binding.newsList.adapter = adapter

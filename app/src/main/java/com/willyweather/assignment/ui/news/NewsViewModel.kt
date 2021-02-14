@@ -12,17 +12,10 @@ class NewsViewModel @Inject constructor(
     private val newsRepository: NewsRepository
 ) : ViewModel() {
 
-
     private fun newsArticles(countryKey: String): LiveData<Resource<List<News>?>> =
         newsRepository.getNewsArticles(countryKey)
 
 
     fun getNewsArticles(countryKey: String) = newsArticles(countryKey)
-
-
-    private fun newsArticlesFromOnlyServer(countryKey: String) =
-        newsRepository.getNewsArticlesFromServerOnly(countryKey)
-
-    fun getNewsArticlesFromServer(countryKey: String) = newsArticlesFromOnlyServer(countryKey)
 
 }

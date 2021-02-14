@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:background="@color/color_transparent"
+                android:background="@color/transparent"
                 android:maxLines="1"
                 android:padding="@dimen/normal_padding"
                 android:textAllCaps="true"
@@ -55,7 +55,7 @@
             android:maxLines="2"
             android:padding="@dimen/normal_padding"
             android:textColor="@android:color/black"
-            android:textSize="@dimen/textview_size_normal"
+            android:textSize="@dimen/text_size_normal"
             tools:text="Elon Musk says Tesla can't yet launch in India" />
 
         <!-- Date - Time -->
@@ -70,7 +70,7 @@
             android:maxLines="2"
             android:textAllCaps="true"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/textview_size_small"
+            android:textSize="@dimen/text_size_small"
             tools:text="@string/str_test_date" />
 
     </RelativeLayout>
