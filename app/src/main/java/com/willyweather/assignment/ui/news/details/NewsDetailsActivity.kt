@@ -21,7 +21,6 @@ class NewsDetailsActivity : AppCompatActivity() {
         news?.let {
             showData(it)
         }
-
         enableActionBarBackButton()
 
     }
