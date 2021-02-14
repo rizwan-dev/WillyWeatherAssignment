@@ -8,6 +8,7 @@ import com.willyweather.assignment.repository.repo.news.NewsRepository
 import javax.inject.Inject
 
 
+
 class NewsViewModel @Inject constructor(
     private val newsRepository: NewsRepository
 ) : ViewModel() {
